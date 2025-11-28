@@ -1,0 +1,16 @@
+CREATE DATABASE proyectofinal;
+USE proyectofinal;
+
+CREATE TABLE escuela (
+    idescuela INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100),
+    descripcion VARCHAR(100)
+);
+
+CREATE TABLE especialidad (
+    idespecialidad INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100),
+    idescuela INT, FOREIGN KEY (idescuela) REFERENCES escuela(idescuela)
+);
+INSERT INTO escuela (nombre, descripcion) VALUES ('Ingeniería', 'Todo sobre Ingeniería');
+INSERT INTO especialidad (nombre, idescuela) VALUES ('Ingeniería de Software', 1);
