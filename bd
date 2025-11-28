@@ -14,3 +14,6 @@ CREATE TABLE especialidad (
 );
 INSERT INTO escuela (nombre, descripcion) VALUES ('Ingeniería', 'Todo sobre Ingeniería');
 INSERT INTO especialidad (nombre, idescuela) VALUES ('Ingeniería de Software', 1);
+
+
+ /* Mi BD de MySQL*/
